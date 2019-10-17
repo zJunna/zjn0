@@ -1,0 +1,10 @@
+.container{width: 800px;padding: 110px 0;}
+.wid{width: 50%;text-align: center;}
+h2{margin: 0 0 20px;}
+.logo{}
+.form label{display: block;padding: 10px;height: 30px;line-height: 30px;}
+.form label input{width: 200px;height: 26px;text-indent: 10px;border: 1px solid #ccc;}
+.login{width: 120px;height: 30px;line-height: 30px;background: #15c2f5;border: 1px solid #15c2f5;margin: auto;color: #fff;margin-top: 15px;cursor: pointer;outline: none;}
+.login:hover{background: #00aeff;border: 1px solid #ccc;}
+.login:active{color: #666;}
+.tip{font-size: 12px;color: #ff0110;text-align: left;padding-left: 120px;display: none;}

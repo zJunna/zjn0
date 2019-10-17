@@ -1,0 +1,25 @@
+/*侧边栏 - 右侧*/
+.content{padding-top: 40px;padding-bottom: 100px;}
+.side_part{margin-bottom: 20px;line-height: 40px;}
+/*宽度*/
+.wid35{width: 35%;text-align: right;padding-right: 20px;}
+.wid65{width: 65%;padding-left: 20px;}
+.wid160,.wid200,.wid400{height: 40px;border: 1px solid #CCC;border-radius:5px;outline: none;text-indent: 20px;}
+.wid160{width: 160px;}
+.wid200{width: 200px;}
+.wid400{width: 400px;}
+.textarea{height: 80px;padding: 15px 20px;text-indent: 0;}
+/*必填、星号*/
+.require{color: #FC5F65;font-weight: bold;}
+/*提示*/
+.tip{color: #FC5F65;margin-left: 20px;font-size: 12px;}
+/*时间*/
+.choose_date{position: relative;}
+.choose_date img{position: absolute;top: 13px;left: 155px;}
+/*提交*/
+.add_btn{margin-top: 40px;}
+.add_del,.add_save{width:140px;height:40px;border-radius:5px;font-weight:bold;cursor: pointer;outline: none;}
+.add_del{background: #FFF0F0;border: 1px solid #FFF0F0;color: #FC5F65;margin-right: 30px;}
+.add_save{background: #0561FF;border: 1px solid #0561FF;color: #fff;}
+.add_del:hover{border: 1px solid #FC5F65;}
+.add_save:hover{background: #4C9BF0;border: 1px solid #4C9BF0;}

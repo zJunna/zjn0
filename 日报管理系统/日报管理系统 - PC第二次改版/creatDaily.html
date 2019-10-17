@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
+	<title>准安用户管理-创建日报</title>
+	<link rel="stylesheet" type="text/css" href="css/base.css"/>
+	<link rel="stylesheet" type="text/css" href="css/creatDaily.css"/>
+	<link rel="stylesheet" type="text/css" href="css/jedate.css"/>
+	<link rel="stylesheet" type="text/css" href="css/Eject.css"/>
+	<script src="js/jquery.1.9.1.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/base.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/creatDaily.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jedate.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/Eject.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/wangEditor.min.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+	<div class="container">
+		<!--头部-->
+		<div class="header">
+			<div class="logo">
+				<a href="https://www.zhunan.com/" target="_blank"><img src="images/logo.png"/></a>
+			</div>
+			<div class="wid1200 cf">
+				<div class="personal_center fr">
+					<span class="username fl">才旦卓玛</span>
+					<span class="tx fl">
+						<img src="images/tx.png"/>
+						<div class="log_out">退出登录</div>
+					</span>
+				</div>
+				<div class="nav fr">
+					<a href="###" class="chufa fl">
+						<span>处罚规则</span>
+						<!--处罚规则-->
+						<div class="chufa_show">
+							<div class="chufa_title">处罚办法</div>
+							<div class="chufa_content">
+								<p>如若忘写或者不写日报，</p>
+								<p>第一次扣款20元，第二次扣款100元，</p>
+								<p>第三次扣款500元，第四次直接封号处理。</p>
+								<p>如果封号，需向直系领导申请，走线下恢复账号审批流程，然后恢复使用。</p>
+							</div>
+						</div>
+					</a>
+					<a href="fineRecord.html" target="_blank" class="fine_record fl">罚款记录</a>
+					<a href="###" class="msg fl">
+						<span>消息<sup class="msg_number">32</sup></span>
+						<!--消息-->
+						<div class="msg_show">
+							<div class="msg_title">全部消息</div>
+							<div class="msg_content">
+								<div class="msg_list cf">
+									<div class="msg_list_l fl">
+										<font>武国栋</font>对<font>项洋</font>的日报进行了点评
+									</div>
+									<div class="msg_list_r fr">
+										08-20 18:24
+									</div>
+								</div>
+								<div class="msg_list cf">
+									<div class="msg_list_l fl">
+										<font>武国栋</font>对<font>项洋</font>的日报进行了点评
+									</div>
+									<div class="msg_list_r fr">
+										08-20 18:24
+									</div>
+								</div>
+								<div class="msg_list cf">
+									<div class="msg_list_l fl">
+										<font>武国栋</font>对<font>项洋</font>的日报进行了点评
+									</div>
+									<div class="msg_list_r fr">
+										08-20 18:24
+									</div>
+								</div>
+							</div>
+						</div>
+					</a>
+					<a href="blacklist.html" target="_blank" class="black_list fl">报工黑名单</a>
+					<span class="change_pwd fl">修改密码</span>
+				</div>
+			</div>
+		</div>
+		<!--内容-->
+		<div class="content">
+			<div class="wid1200 cf">
+				<div class="side_bar fl">
+					<div class="tree_graph">
+						<ul>
+							<li class="cf">
+								<div class="side_name cf">
+									<span>刘斐</span>
+									<img src="images/jian.png"/>
+								</div>
+								<div>
+									<ul class="add_li">
+										<li class="cf">
+											<div class="side_name cf">
+												<span>三度融</span>
+												<img src="images/jian.png"/>
+											</div>
+											<div>
+												<ul class="add_li">
+													<li class="cf">
+														<div class="side_name cf">
+															<span>啊啊啊</span>
+															<img src="images/jia.png"/>
+														</div>
+														<div>
+															<ul class="add_li">
+																
+															</ul>
+														</div>
+													</li>
+													<li class="cf">
+														<div class="side_name cf">
+															<span>棒棒棒</span>
+															<img src="images/jia.png"/>
+														</div>
+														<div>
+															<ul class="add_li">
+																
+															</ul>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li class="cf">
+											<div class="side_name cf">
+												<span>钱上钱</span>
+												<img src="images/jia.png"/>
+											</div>
+											<div>
+												<ul class="add_li">
+													
+												</ul>
+											</div>
+										</li>
+										<li class="cf">
+											<div class="side_name cf">
+												<span>准安科技</span>
+												<img src="images/jia.png"/>
+											</div>
+											<div>
+												<ul class="add_li">
+													
+												</ul>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<!--右键菜单-->
+					<div class="menu">
+						<ul>
+				            <li><a href="javascript:;" class="menu_a" onclick="new_staff()">新增员工</a></li>
+				            <li><a href="javascript:;" class="menu_a" onclick="change_staff()">修改员工信息</a></li>
+				            <li><a href="javascript:;" class="menu_a" onclick="my_info()">查看员工信息</a></li>
+				        </ul>
+					</div>
+				</div>
+				<div class="side_right fr">
+					<div class="side_title">首页 > 创建日报</div>
+					<div class="side_part report_time">
+						<span class="date">报告时间：</span>
+						<span class="week">星期</span>
+					</div>
+					<div class="side_part">
+						<div class="report_title">今日完成</div>
+						<div id="editor1">
+
+						</div>
+					</div>
+					<div class="side_part">
+						<div class="report_title">明日计划</div>
+						<div id="editor2">
+
+						</div>
+					</div>
+					<div class="side_part sub_div">
+						<button class="sub">提交</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--尾部-->
+		<div class="footer">
+			<div class="wid1200 footer1">
+				<a href="http://www.zhunankeji.com/" target="_blank">准安科技</a>
+				<span>/</span>
+				<a href="https://www.zhunan.com/" target="_blank">准安控股</a>
+				<span>/</span>
+				<a href="http://www.zhunanjinrong.com/" target="_blank">准安金融</a>
+				<span>/</span>
+				<a href="http://www.yongxinzichan.com/" target="_blank">涌鑫资产</a>
+				<span>/</span>
+				<a href="http://www.sandurong.com/" target="_blank">三度融</a>
+				<span>/</span>
+				<a href="https://www.lmjf2019.com/" target="_blank">链盟金服</a>
+				<span>/</span>
+				<a href="https://www.qianshangqian.com/" target="_blank">钱上钱</a>
+				<span>/</span>
+				<a href="https://www.xzhicha.com/" target="_blank">X职查</a>
+				<span>/</span>
+				<a href="http://www.laimitouzi.com/" target="_blank">来米投资</a>
+				<span>/</span>
+				<a href="https://wannianrili.51240.com/" target="_blank">万年历</a>
+				<span>/</span>
+				<a href="https://www.gerensuodeshui.cn/" target="_blank">薪资计算器</a>
+				<span>/</span>
+				<a href="http://www.wacai.com/tools/grdkjsq.html" target="_blank">贷款小工具</a>
+			</div>
+			<div class="footer2">
+				<span>山东准安互联网科技有限公司-版权所有</span>
+				<span>ICP备案号：鲁ICP备16009413号</span>
+			</div>
+		</div>
+		<!--model弹窗-->
+		<div class="model">
+			<!--新增员工-->
+			<div class="show_model1">
+				<div class="close"></div>
+				<div class="model_title">新增员工</div>
+				<div class="model_part">
+					<span>岗位名称</span>
+					<input id="job1" type="text" placeholder="请输入岗位名称" maxlength="20"/>
+				</div>
+				<div class="model_part">
+					<span>直接上级</span>
+					<input id="superior1" type="text" placeholder="请输入直接上级" maxlength="20"/>
+				</div>
+				<div class="model_part">
+					<span>员工姓名</span>
+					<input id="staff_name1" type="text" placeholder="请输入员工姓名" maxlength="20"/>
+				</div>
+				<div class="model_part">
+					<span>联系方式</span>
+					<input id="phone_no1" type="text" placeholder="请输入联系方式" maxlength="20"/>
+				</div>
+				<div class="model_part">
+					<span>身份证号</span>
+					<input id="id_card1" type="text" placeholder="请输入身份证号" maxlength="20"/>
+				</div>
+				<div class="btn cf">
+					<button class="save1 fl">保存</button>
+					<button class="cancel_add fr">取消</button>
+				</div>
+			</div>
+			<!--修改员工信息-->
+			<div class="show_model2">
+				<div class="close"></div>
+				<div class="model_title">修改员工信息</div>
+				<div class="model_part">
+					<span>岗位名称</span>
+					<input id="job2" type="text" placeholder="请输入岗位名称" maxlength="20"/>
+				</div>
+				<div class="model_part">
+					<span>直接上级</span>
+					<input id="superior2" type="text" placeholder="请输入直接上级" maxlength="20"/>
+				</div>
+				<div class="model_part">
+					<span>员工姓名</span>
+					<input id="staff_name2" type="text" placeholder="请输入员工姓名" maxlength="20"/>
+				</div>
+				<div class="model_part">
+					<span>联系方式</span>
+					<input id="phone_no2" type="text" placeholder="请输入联系方式" maxlength="20"/>
+				</div>
+				<div class="model_part">
+					<span>身份证号</span>
+					<input id="id_card2" type="text" placeholder="请输入身份证号" maxlength="20"/>
+				</div>
+				<div class="btn cf">
+					<button class="save2 fl">保存</button>
+					<button class="del fr">删除</button>
+				</div>
+			</div>
+			<!--查看员工信息-->
+			<div class="show_model3">
+				<div class="close"></div>
+				<div class="model_title">查看员工信息</div>
+				<div class="model_part">
+					<span>岗位名称</span>
+					<input id="job3" type="text" placeholder="请输入岗位名称" maxlength="20"/>
+				</div>
+				<div class="model_part">
+					<span>直接上级</span>
+					<input id="superior3" type="text" placeholder="请输入直接上级" maxlength="20"/>
+				</div>
+				<div class="model_part">
+					<span>员工姓名</span>
+					<input id="staff_name3" type="text" placeholder="请输入员工姓名" maxlength="20"/>
+				</div>
+				<div class="model_part">
+					<span>联系方式</span>
+					<input id="phone_no3" type="text" placeholder="请输入联系方式" maxlength="20"/>
+				</div>
+				<div class="model_part">
+					<span>身份证号</span>
+					<input id="id_card3" type="text" placeholder="请输入身份证号" maxlength="20"/>
+				</div>
+			</div>
+			<!--修改密码-->
+			<div class="show_model4">
+				<div class="close"></div>
+				<div class="model_title">修改密码</div>
+				<div class="model_part">
+					<span>原密码</span>
+					<input id="old_pwd" type="password" placeholder="请输入原密码" maxlength="20"/>
+				</div>
+				<div class="model_part">
+					<span>新密码</span>
+					<input id="new_pwd" type="password" placeholder="请输入新密码" maxlength="20"/>
+				</div>
+				<div class="model_part">
+					<span>确认新密码</span>
+					<input id="confirm_pwd" type="password" placeholder="请确认新密码" maxlength="20"/>
+				</div>
+				<div class="pwd_tip">请输入原密码</div>
+				<div class="btn cf">
+					<button class="save_pwd fl">保存</button>
+					<button class="cancel_pwd fr">取消</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		var E = window.wangEditor
+        var editor1 = new E('#editor1')
+        // 自定义菜单配置
+	    editor1.customConfig.menus = [
+	        'head',  // 标题
+		    'bold',  // 粗体
+		    'fontSize',  // 字号
+		    'fontName',  // 字体
+		    'italic',  // 斜体
+		    'underline',  // 下划线
+		    'strikeThrough',  // 删除线
+		    'foreColor',  // 文字颜色
+		    'backColor',  // 背景颜色
+		    'link',  // 插入链接
+		    'list',  // 列表
+		    'justify',  // 对齐方式
+		    'quote',  // 引用
+		    'emoticon',  // 表情
+		    //'image',  // 插入图片
+		    'table',  // 表格
+		    //'video',  // 插入视频
+		    'code',  // 插入代码
+		    'undo',  // 撤销
+		    'redo'  // 重复
+	    ]
+	    // 关闭粘贴样式的过滤
+	    editor1.customConfig.pasteFilterStyle = false
+	    // 忽略粘贴内容中的图片
+	    editor1.customConfig.pasteIgnoreImg = true
+	    // 自定义处理粘贴的文本内容
+	    this.editor1.customConfig.pasteTextHandle = function (content) {
+	      // content 即粘贴过来的内容（html 或 纯文本），可进行自定义处理然后返回
+	      if (content == '' && !content) return ''
+	      var str = content
+	      str = str.replace(/<xml>[\s\S]*?<\/xml>/ig, '')
+	      str = str.replace(/<style>[\s\S]*?<\/style>/ig, '')
+	      str = str.replace(/<\/?[^>]*>/g, '')
+	      str = str.replace(/[ | ]*\n/g, '\n')
+	      str = str.replace(/&nbsp;/ig, '')
+	      //console.log('过滤前', content)
+	      //console.log('过滤后', str)
+	      return str
+	    }
+        editor1.create()
+        // 第二个编辑器
+        var editor2 = new E('#editor2')
+        editor2.customConfig.menus = [
+	        'head',  // 标题
+		    'bold',  // 粗体
+		    'fontSize',  // 字号
+		    'fontName',  // 字体
+		    'italic',  // 斜体
+		    'underline',  // 下划线
+		    'strikeThrough',  // 删除线
+		    'foreColor',  // 文字颜色
+		    'backColor',  // 背景颜色
+		    'link',  // 插入链接
+		    'list',  // 列表
+		    'justify',  // 对齐方式
+		    'quote',  // 引用
+		    'emoticon',  // 表情
+		    //'image',  // 插入图片
+		    'table',  // 表格
+		    //'video',  // 插入视频
+		    'code',  // 插入代码
+		    'undo',  // 撤销
+		    'redo'  // 重复
+	    ]
+        // 关闭粘贴样式的过滤
+	    editor2.customConfig.pasteFilterStyle = false
+	    // 忽略粘贴内容中的图片
+	    editor2.customConfig.pasteIgnoreImg = true
+	    // 自定义处理粘贴的文本内容
+	    this.editor2.customConfig.pasteTextHandle = function (content) {
+	      // content 即粘贴过来的内容（html 或 纯文本），可进行自定义处理然后返回
+	      if (content == '' && !content) return ''
+	      var str = content
+	      str = str.replace(/<xml>[\s\S]*?<\/xml>/ig, '')
+	      str = str.replace(/<style>[\s\S]*?<\/style>/ig, '')
+	      str = str.replace(/<\/?[^>]*>/g, '')
+	      str = str.replace(/[ | ]*\n/g, '\n')
+	      str = str.replace(/&nbsp;/ig, '')
+	      //console.log('过滤前', content)
+	      //console.log('过滤后', str)
+	      return str
+	    }
+        editor2.create()
+	</script>
+</body>
+</html>

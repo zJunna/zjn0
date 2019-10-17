@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>X职查-人力资源系统</title>
+	<meta name="keywords" content="职场信用，职信，员工征信，职场征信查询"/>
+	<meta name="description" content="X职查是一个职场信用共享与查询平台。在X职查平台企业可以把员工的守信和失信行为在系统里共享，也可以在雇佣前或雇佣中查询员工的职场征信。X职查是一个专业的区块链职业信用查询平台。"/>
+	<meta name="author" content="xiangyang"/>
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
+	<link rel="stylesheet" type="text/css" href="css/Eject.css"/>
+	<link rel="stylesheet" type="text/css" href="css/selectFilter.css"/>
+	<link rel="stylesheet" type="text/css" href="css/jedate.css"/>
+	<link rel="stylesheet" type="text/css" href="css/base.css"/>
+	<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	<script src="js/jquery.1.9.1.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/Eject.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/selectFilter.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jedate.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/base.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+	<!--[if lte IE 8]>
+		<div>
+			你正在使用一个 <strong>过时</strong> 的浏览器。请 <a href=https://browsehappy.com/ target=_blank>升级您的浏览器</a>，以提高您的体验。
+		</div>
+	<![endif]-->
+</head>
+<body>
+	<div class="container">
+		<div class="cf">
+			<!--侧边栏-->
+			<div class="side_bar fl">
+				<div class="logo">
+					<img src="images/logo.png" alt="X职查-人力资源系统" title="X职查-人力资源系统"/>
+				</div>
+				<!--导航栏-->
+				<div class="nav">
+					<div class="nav_title">企业签约管理</div>
+					<ul class="nav_side">
+						<li class="nav_active">待签约列表</li>
+						<li>已签约列表</li>
+					</ul>
+					<div class="nav_title">企业录用管理</div>
+					<ul class="nav_side">
+						<li>待录用列表</li>
+						<li>已录用列表</li>
+					</ul>
+					<div class="nav_title">员工管理</div>
+					<ul class="nav_side">
+						<li>已签约员工列表</li>
+					</ul>
+					<div class="nav_title">合同管理</div>
+					<ul class="nav_side">
+						<li>合同列表</li>
+					</ul>
+				</div>
+			</div>
+			<!--右边内容-->
+			<div class="side_right fr">
+				<!--头部-->
+				<div class="header">
+					<div class="sign_out fr">
+						<img src="images/sign_out.png"/>
+						<div class="log_out">退出登录</div>
+					</div>
+					<div class="company_name fr">
+						<span>青岛XXX有限公司</span>
+					</div>
+					<div class="tx fr">
+						<img src="images/tx.png"/>
+					</div>
+				</div>
+				<!--内容-->
+				<div class="content">
+					<!--筛选-->
+					<div class="side_top cf">
+						<div class="side_part fl">
+							<div class="side_title fl">
+								省份地区
+							</div>
+							<div class="side_input fl">
+								<div class="filter-box drop_down1">
+									<div class="filter-text">
+										<input class="filter-title" type="text" readonly placeholder="全部" autocomplete="off" />
+										<i class="icon icon-filter-arrow"></i>
+									</div>
+									<select name="filter">
+										<option value="" disabled>请选择</option>
+										<option value="北京市">北京市</option>
+										<option value="天津市">天津市</option>
+										<option value="上海市">上海市</option>
+										<option value="重庆市">重庆市</option>
+										<option value="河北省">河北省</option>
+										<option value="山西省">山西省</option>
+										<option value="辽宁省">辽宁省</option>
+										<option value="吉林省">吉林省</option>
+										<option value="黑龙江省">黑龙江省</option>
+										<option value="江苏省">江苏省</option>
+										<option value="浙江省">浙江省</option>
+										<option value="安徽省">安徽省</option>
+										<option value="福建省">福建省</option>
+										<option value="江西省">江西省</option>
+										<option value="山东省">山东省</option>
+										<option value="河南省">河南省</option>
+										<option value="湖北省">湖北省</option>
+										<option value="湖南省">湖南省</option>
+										<option value="广东省">广东省</option>
+										<option value="海南省">海南省</option>
+										<option value="四川省">四川省</option>
+										<option value="贵州省">贵州省</option>
+										<option value="云南省">云南省</option>
+										<option value="陕西省">陕西省</option>
+										<option value="甘肃省">甘肃省</option>
+										<option value="青海省">青海省</option>
+										<option value="台湾省">台湾省</option>
+										<option value="内蒙古自治区">内蒙古自治区</option>
+										<option value="广西壮族自治区">广西壮族自治区</option>
+										<option value="西藏自治区">西藏自治区</option>
+										<option value="宁夏回族自治区">宁夏回族自治区</option>
+										<option value="新疆维吾尔自治区">新疆维吾尔自治区</option>
+										<option value="香港特别行政区">香港特别行政区</option>
+										<option value="澳门特别行政区">澳门特别行政区</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="side_part fl">
+							<div class="side_title fl">
+								企业类型
+							</div>
+							<div class="side_input fl">
+								<div class="filter-box drop_down2">
+									<div class="filter-text">
+										<input class="filter-title" type="text" readonly placeholder="请选择" autocomplete="off" />
+										<i class="icon icon-filter-arrow"></i>
+									</div>
+									<select name="filter">
+										<option value="" disabled>请选择</option>
+										<option value="有限责任公司">有限责任公司</option>
+										<option value="股份责任公司">股份责任公司</option>
+										<option value="集体所有制">集体所有制</option>
+										<option value="国有企业">国有企业</option>
+										<option value="个体工商户">个体工商户</option>
+										<option value="个人独资企业">个人独资企业</option>
+										<option value="有限合伙">有限合伙</option>
+										<option value="普通合伙">普通合伙</option>
+										<option value="外商投资企业">外商投资企业</option>
+										<option value="港、澳、台">港、澳、台</option>
+										<option value="联营企业">联营企业</option>
+										<option value="私营企业">私营企业</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="side_part fl">
+							<div class="side_title fl">
+								申请时间
+							</div>
+							<div class="side_input fl">
+								<div class="choice_time cf">
+									<div class="time_img fl">
+										<img src="images/time.png"/>
+									</div>
+									<input id="beginDate" class="fl" placeholder="开始时间" autocomplete="off"/>
+									<span>-</span>
+									<input id="endDate" class="fr" placeholder="结束时间" autocomplete="off" />
+									<div class="time_img fr">
+										<img src="images/time.png"/>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="side_part fl">
+							<div class="side_title fl">
+								审核状态
+							</div>
+							<div class="side_input fl">
+								<div class="filter-box drop_down3">
+									<div class="filter-text">
+										<input class="filter-title" type="text" readonly placeholder="请选择" autocomplete="off" />
+										<i class="icon icon-filter-arrow"></i>
+									</div>
+									<select name="filter">
+										<option value="" disabled>请选择</option>
+										<option value="待定">待定</option>
+										<option value="待审核">待审核</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="side_btn fr">
+							<button class="reset_btn fr">重置</button>
+							<button class="query_btn fr">查询</button>
+						</div>
+					</div>
+					<!--表格-->
+					<table class="side_table" rules="rows" frame="below">
+						<tr>
+							<th>序号</th>
+							<th>待签约企业名称</th>
+							<th>省份地区</th>
+							<th>企业类型</th>
+							<th>企业联系人</th>
+							<th>手机号码</th>
+							<th>申请时间</th>
+							<th>审核时间</th>
+							<th>审核状态</th>
+							<th>操作</th>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>青岛有线网络有限公司</td>
+							<td>广东省</td>
+							<td>有限责任公司</td>
+							<td>张德处</td>
+							<td>16875469832</td>
+							<td>2019-07-26</td>
+							<td>2019-07-29</td>
+							<td>
+								<span style="color: #FC5F65;">驳回</span>
+							</td>
+							<td>
+								<span class="see_details">查看详情</span>
+							</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>上海青浦投资有限公司</td>
+							<td>浙江省</td>
+							<td>股份有限公司</td>
+							<td>柳传志</td>
+							<td>16895463287</td>
+							<td>2019-07-24</td>
+							<td>2019-07-26</td>
+							<td>
+								<span style="color: #30CFB7;">待审核</span>
+							</td>
+							<td>
+								<span class="see_details">查看详情</span>
+							</td>
+						</tr>
+					</table>
+					<div class="page cf">
+						<div class="fr">
+							<div class="page_total fl">
+								共<span>3</span>条
+							</div>
+							<div class="page_num fl">
+								10条/页
+							</div>
+							<div class="page_choose1 fl">
+								<span class="page_prev fl"><</span>
+								<span class="page_now fl">1</span>
+								<span class="page_next fl">></span>
+							</div>
+							<div class="page_choose2 fl">
+								<span class="go_to fl">前往</span>
+								<input class="page_to fl" type="text" value="1" autocomplete="off" />
+								<span class="fl">页</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--底部-->
+				<div class="footer">
+					<div class="footer1">
+						<a href="http://www.zhunankeji.com/" target="_blank">准安科技</a>
+						<span>/</span>
+						<a href="https://www.zhunan.com/" target="_blank">准安控股</a>
+						<span>/</span>
+						<a href="http://www.zhunanjinrong.com/" target="_blank">准安金融</a>
+						<span>/</span>
+						<a href="http://www.yongxinzichan.com/" target="_blank">涌鑫资产</a>
+						<span>/</span>
+						<a href="http://www.sandurong.com/" target="_blank">三度融</a>
+						<span>/</span>
+						<a href="https://www.lmjf2019.com/" target="_blank">链盟金服</a>
+						<span>/</span>
+						<a href="https://www.qianshangqian.com/" target="_blank">钱上钱</a>
+						<span>/</span>
+						<a href="https://www.xzhicha.com/" target="_blank">X职查</a>
+						<span>/</span>
+						<a href="http://www.laimitouzi.com/" target="_blank">来米投资</a>
+						<span>/</span>
+						<a href="https://www.gerensuodeshui.cn/" target="_blank">薪资计算器</a>
+					</div>
+					<div class="footer2">
+						<span>山东准安互联网科技有限公司-版权所有</span>
+						<span>ICP备案号：鲁ICP备16009413号</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

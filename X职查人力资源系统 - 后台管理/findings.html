@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>X职查-人力资源系统</title>
+	<meta name="keywords" content="职场信用，职信，员工征信，职场征信查询"/>
+	<meta name="description" content="X职查是一个职场信用共享与查询平台。在X职查平台企业可以把员工的守信和失信行为在系统里共享，也可以在雇佣前或雇佣中查询员工的职场征信。X职查是一个专业的区块链职业信用查询平台。"/>
+	<meta name="author" content="xiangyang"/>
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
+	<link rel="stylesheet" type="text/css" href="css/Eject.css"/>
+	<link rel="stylesheet" type="text/css" href="css/selectFilter.css"/>
+	<link rel="stylesheet" type="text/css" href="css/jedate.css"/>
+	<link rel="stylesheet" type="text/css" href="css/base.css"/>
+	<link rel="stylesheet" type="text/css" href="css/findings.css"/>
+	<script src="js/jquery.1.9.1.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/Eject.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/selectFilter.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jedate.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/base.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/findings.js" type="text/javascript" charset="utf-8"></script>
+	<!--[if lte IE 8]>
+		<div>
+			你正在使用一个 <strong>过时</strong> 的浏览器。请 <a href=https://browsehappy.com/ target=_blank>升级您的浏览器</a>，以提高您的体验。
+		</div>
+	<![endif]-->
+</head>
+<body>
+	<div class="container">
+		<div class="cf">
+			<!--侧边栏-->
+			<div class="side_bar fl">
+				<div class="logo">
+					<img src="images/logo.png" alt="X职查-人力资源系统" title="X职查-人力资源系统"/>
+				</div>
+				<!--导航栏-->
+				<div class="nav">
+					<div class="nav_title">企业签约管理</div>
+					<ul class="nav_side">
+						<li>待签约列表</li>
+						<li>已签约列表</li>
+					</ul>
+					<div class="nav_title">企业录用管理</div>
+					<ul class="nav_side">
+						<li>待录用列表</li>
+						<li>已录用列表</li>
+					</ul>
+					<div class="nav_title">员工管理</div>
+					<ul class="nav_side">
+						<li>已签约员工列表</li>
+					</ul>
+					<div class="nav_title">合同管理</div>
+					<ul class="nav_side">
+						<li>合同列表</li>
+					</ul>
+				</div>
+			</div>
+			<!--右边内容-->
+			<div class="side_right fr">
+				<!--头部-->
+				<div class="header">
+					<div class="header_title fl">
+						<span class="b_back">返回</span>
+						<span>＞</span>
+						<span>背调详情</span>
+					</div>
+					<div class="sign_out fr">
+						<img src="images/sign_out.png"/>
+						<div class="log_out">退出登录</div>
+					</div>
+					<div class="company_name fr">
+						<span>青岛XXX有限公司</span>
+					</div>
+					<div class="tx fr">
+						<img src="images/tx.png"/>
+					</div>
+				</div>
+				<!--内容-->
+				<div class="content">
+					<!--个人信息-->
+					<div class="personal_info cf">
+						<div class="surname fl">罗</div>
+						<div class="personal_details fl">
+							<div class="personal_part1 cf">
+								<div class="personal_name fl">
+									<span>罗永辉</span>
+								</div>
+								<div class="personal_time fr">
+									背调时间：<span>2019-08-28</span>
+								</div>
+							</div>
+							<div class="personal_part2 cf">
+								<div class="personal_sex fl">性别：男</div>
+								<div class="personal_age fl">年龄：29岁</div>
+								<div class="personal_address fl">所在地区：山东省潍坊市</div>
+								<div class="personal_edu fl">学历：本科</div>
+								<div class="personal_phone_no fl">手机号：16875469832</div>
+								<div class="personal_id_card fl">身份证号：373286199006183694</div>
+							</div>
+							<div class="high_risk">
+								存在高危风险项：<span>5</span>项
+							</div>
+						</div>
+					</div>
+					<!--逾期黑名单记录-->
+					<div class="side_part">
+						<div class="side_notes cf">
+							<div class="side_circle fl">
+								<span></span>
+							</div>
+							<div class="side_title fl">逾期黑名单记录</div>
+							<div class="side_num fl">
+								<span>2</span>条
+							</div>
+						</div>
+						<!--表格-->
+						<table class="side_table" rules="rows" frame="below">
+							<tr>
+								<th>序号</th>
+								<th>平台编码</th>
+								<th>平台类型</th>
+								<th>该平台逾期数量</th>
+								<th>逾期金额范围（万元）</th>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>EM_0000183053</td>
+								<td>银行</td>
+								<td>6</td>
+								<td>0W-0.2W</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>EM_0000186663</td>
+								<td>非银行</td>
+								<td>2</td>
+								<td>0.5W-0.6W</td>
+							</tr>
+						</table>
+					</div>
+					<!--网贷黑名单记录-->
+					<div class="side_part">
+						<div class="side_notes cf">
+							<div class="side_circle fl">
+								<span></span>
+							</div>
+							<div class="side_title fl">网贷黑名单记录</div>
+							<div class="side_num fl">
+								<span>2</span>条
+							</div>
+						</div>
+						<!--表格-->
+						<table class="side_table" rules="rows" frame="below">
+							<tr>
+								<th>序号</th>
+								<th>平台编码</th>
+								<th>催收发生时间</th>
+								<th>金额范围</th>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>49</td>
+								<td>2018/09/23 18:17:42</td>
+								<td>500元以内</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>36</td>
+								<td>2018/05/14 13:10:35</td>
+								<td>1500-2000元</td>
+							</tr>
+						</table>
+					</div>
+					<!--涉诉信息-->
+					<div class="side_part">
+						<div class="side_notes cf">
+							<div class="side_circle fl">
+								<span></span>
+							</div>
+							<div class="side_title fl">涉诉信息</div>
+							<div class="side_num fl">
+								<span>2</span>条
+							</div>
+						</div>
+						<!--表格-->
+						<table class="side_table" rules="rows" frame="below">
+							<tr>
+								<th>序号</th>
+								<th>标题</th>
+								<th>案件类型</th>
+								<th>审件时间</th>
+								<th>具体内容</th>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>(2016)云 0821 执 140 号</td>
+								<td>执行公告</td>
+								<td>2018-06-18</td>
+								<td>...终结本次执行程序 李**...</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>李**</td>
+								<td>法院公告</td>
+								<td>2019-08-27</td>
+								<td>部分未履行 被告李**</td>
+							</tr>
+						</table>
+					</div>
+					<!--被执行记录-->
+					<div class="side_part">
+						<div class="side_notes cf">
+							<div class="side_circle fl">
+								<span></span>
+							</div>
+							<div class="side_title fl">被执行记录</div>
+							<div class="side_num fl">
+								<span>2</span>条
+							</div>
+						</div>
+						<!--表格-->
+						<table class="side_table" rules="rows" frame="below">
+							<tr>
+								<th>序号</th>
+								<th>执行案号</th>
+								<th>执行标的</th>
+								<th>执行法院</th>
+								<th>立案时间</th>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>(2019)鲁0691执723号</td>
+								<td>55593</td>
+								<td>烟台经济技术开发区人民法院</td>
+								<td>2019-07-01</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>(2019)鲁0691执723号</td>
+								<td>55593</td>
+								<td>厦门市思明区人民法院</td>
+								<td>2019-05-21</td>
+							</tr>
+						</table>
+					</div>
+					<!--失信记录-->
+					<div class="side_part">
+						<div class="side_notes cf">
+							<div class="side_circle fl">
+								<span></span>
+							</div>
+							<div class="side_title fl">失信记录</div>
+							<div class="side_num fl">
+								<span>1</span>条
+							</div>
+						</div>
+						<!--表格-->
+						<table class="side_table" rules="rows" frame="below">
+							<tr>
+								<th>序号</th>
+								<th>发布日期</th>
+								<th>执行依据文号</th>
+								<th>执行法院</th>
+								<th>立案时间</th>
+								<th>案号</th>
+								<th>做出执行依据单位</th>
+								<th>生效法律文书做出的义务</th>
+								<th>被执行人履行情况</th>
+								<th>失信被执行人行为具体情况</th>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>2019-07-07</td>
+								<td>(2019)豫1525民初39号</td>
+								<td>固始县人民法院</td>
+								<td>2019-07-01</td>
+								<td>(2019)豫1525执1726号</td>
+								<td>固始县人民法院</td>
+								<td>(2019)豫1525民初39号民事判决书</td>
+								<td>全部未履行</td>
+								<td>有履行能力而拒不履行生效法律文书确定义务</td>
+							</tr>
+						</table>
+					</div>
+					<!--犯罪不良记录-->
+					<div class="side_part">
+						<div class="side_notes cf">
+							<div class="side_circle fl">
+								<span></span>
+							</div>
+							<div class="side_title fl">犯罪不良记录</div>
+							<div class="side_num fl">
+								<span>2</span>条
+							</div>
+						</div>
+						<!--表格-->
+						<table class="side_table" rules="rows" frame="below">
+							<tr>
+								<th>序号</th>
+								<th>案件类型</th>
+								<th>案件来源</th>
+								<th>发案时段</th>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>前科</td>
+								<td>前科</td>
+								<td>3个月以内</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>前科</td>
+								<td>非前科</td>
+								<td>6-12个月</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<!--底部-->
+				<div class="footer">
+					<div class="footer1">
+						<a href="http://www.zhunankeji.com/" target="_blank">准安科技</a>
+						<span>/</span>
+						<a href="https://www.zhunan.com/" target="_blank">准安控股</a>
+						<span>/</span>
+						<a href="http://www.zhunanjinrong.com/" target="_blank">准安金融</a>
+						<span>/</span>
+						<a href="http://www.yongxinzichan.com/" target="_blank">涌鑫资产</a>
+						<span>/</span>
+						<a href="http://www.sandurong.com/" target="_blank">三度融</a>
+						<span>/</span>
+						<a href="https://www.lmjf2019.com/" target="_blank">链盟金服</a>
+						<span>/</span>
+						<a href="https://www.qianshangqian.com/" target="_blank">钱上钱</a>
+						<span>/</span>
+						<a href="https://www.xzhicha.com/" target="_blank">X职查</a>
+						<span>/</span>
+						<a href="http://www.laimitouzi.com/" target="_blank">来米投资</a>
+						<span>/</span>
+						<a href="https://www.gerensuodeshui.cn/" target="_blank">薪资计算器</a>
+					</div>
+					<div class="footer2">
+						<span>山东准安互联网科技有限公司-版权所有</span>
+						<span>ICP备案号：鲁ICP备16009413号</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+/*侧边栏 - 右侧*/
+.content{padding: 40px 50px 50px 40px;}
+/*右侧上边*/
+.side_top{background: #F8F9FC;padding: 0 50px;}
+.side_part{margin-right: 70px;font-size:16px;line-height: 74px;}
+.side_title{margin-right: 36px;}
+.side_input{font-weight:bold;}
+/*按钮*/
+.side_btn{padding-top: 22px;padding-bottom: 20px;}
+.save_btn{width: 80px;height: 32px;border-radius: 4px;font-size: 14px;font-weight: bold;cursor: pointer;border: 1px solid #0561FF;background: #0561FF;color: #fff;margin-right: 20px;}
+.save_btn:hover{background: #4C9BF0;border: 1px solid #4C9BF0;}
+/*表格*/
+.side_table{width: 100%;margin-top: 60px;}
+.side_table tr{border-bottom: 1px solid #ccc;}
+.side_table tr:nth-child(1){background: #ECF0F6;border-bottom: 1px solid #ECF0F6;}
+.side_table tr:hover{background: #F2F7FB;cursor: default;}
+.side_table tr:nth-child(1):hover{background: #ECF0F6;}
+.side_table tr th{text-align: left;padding: 11px 5px 10px;}
+.side_table tr td{font-size: 12px;text-align: left;padding: 12px 5px 11px;}
+.side_table tr th:nth-child(1),.side_table tr td:nth-child(1){padding-left: 30px;}
+.see_file{color: #0561FF;}
+.see_file:hover{text-decoration: underline;cursor: pointer;}
+/*图片放大显示*/
+.mask{position: fixed;left: 0;top: 0;right: 0;bottom: 0;background: rgba(0,0,0,0.7);text-align: center;display: none;z-index: 5;}
+.mask_close{position: fixed;top: 70px;right: 50px;width: 40px;height: 40px;background: url(../images/big_close.png);cursor: pointer;}
+.mask_prev{position: fixed;top: 50%;left: 20px;width: 45px;height: 45px;background: url(../images/mask_prev.png);}
+.mask_prev:hover{background: url(../images/mask_prev_hover.png);cursor: pointer;}
+.mask_next{position: fixed;top: 50%;right: 20px;width: 45px;height: 45px;background: url(../images/mask_next.png);}
+.mask_next:hover{background: url(../images/mask_next_hover.png);cursor: pointer;}
+#big_img_show{max-width: 800px;}

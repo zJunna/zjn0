@@ -1,0 +1,11 @@
+/*侧边栏 - 右侧*/
+.side_part{padding-top: 40px;}
+.side_title{padding-right: 40px;width: 165px;line-height: 24px;text-align: right;}
+.side_content{color: #B4B4B4;line-height: 20px;}
+/*签约企业名称*/
+.signing_company_name{color: #333;line-height: 24px;}
+/*签约合同*/
+.contract{margin-bottom: 30px;}
+.contract_pdf{color: #666;line-height: 24px;}
+/*签约提示*/
+.signing_success_tip{padding-left: 164px;padding-top: 40px;color: #12C0A1;font-size:18px;font-weight:bold;line-height:24px;}

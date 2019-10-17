@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>准安用户管理-我的日报</title>
+	<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+	<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	<link rel="stylesheet" type="text/css" href="../userManagement/css/jedate.css"/>
+	<script src="../../js/jquery.1.9.1.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../userManagement/js/jedate.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="date_choose cf">
+			<div class="fl">
+				<span>起始时间：</span>
+				<input id="beginDate" placeholder="请输入起始时间"/>
+			</div>
+			<div class="fl">
+				<span>结束时间：</span>
+				<input id="endDate" placeholder="请输入结束时间" />
+			</div>
+			<div class="fr">
+				<button class="search">查询</button>
+			</div>
+		</div>
+		<table class="table">
+			<tr>
+				<th>序号</th>
+				<th>报告时间</th>
+				<th>创建人</th>
+				<th>部门</th>
+				<th>提交时间</th>
+				<th>阅读状态</th>
+				<th>操作</th>
+			</tr>
+			<tr>
+				<td>001</td>
+				<td>2019-08-02</td>
+				<td>张三</td>
+				<td>准安科技-人事</td>
+				<td>20190730165740</td>
+				<td>未阅</td>
+				<td>
+					<span class="see">查看</span>
+				</td>
+			</tr>
+		</table>
+		<div class="cf">
+			<div class="forfeit">
+				（罚款统计：<span>200</span>元）
+			</div>
+			<div class="btn">
+				<button class="creat_daily">+ 创建日报</button>
+			</div>
+		</div>
+		<div class="paging cf">
+			<span class="page_list">首页</span>
+			<span class="page_list">上一页</span>
+			<span class="page_list">下一页</span>
+			<span class="page_list">尾页</span>
+			<p class="page_all">共<span>10</span>页</p>
+			<p class="page_now">第<span>1</span>页</p>
+		</div>
+		<div class="footer">
+			<span><font>&copy;</font>山东准安互联网科技有限公司-版权所有</span><span>备案号：</span><span>鲁ICP备16009413号</span>
+		</div>
+	</div>
+</body>
+</html>

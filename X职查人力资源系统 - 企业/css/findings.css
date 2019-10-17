@@ -1,0 +1,30 @@
+/*侧边栏 - 右侧*/
+.content{padding: 40px 50px 50px 40px;}
+/*个人信息*/
+.personal_info{padding: 40px 50px;background: #ECF0F6;border-radius: 10px;}
+.surname{width: 70px;height: 70px;text-align: center;line-height: 70px;border-radius: 50%;background: #0561FF;color: #fff;font-size: 18px;margin-right: 40px;}
+.personal_details{width: calc(100% - 110px);}
+.personal_part1{line-height:24px;}
+.personal_name{font-size:18px;font-weight:bold;}
+.personal_part2{margin-top: 20px;}
+.personal_sex,.personal_age,.personal_address,.personal_edu,.personal_phone_no,.personal_id_card{margin-right: 40px;margin-top: 10px;}
+.high_risk{margin-top: 20px;color: #FC5F65;}
+/*逾期黑名单记录、被执行记录、失信记录、犯罪不良记录*/
+.side_part{margin-top: 30px;}
+.side_part:nth-child(1){margin-top: 40px;}
+.side_notes{height: 20px;line-height: 20px;}
+.side_circle{padding-top: 3px;margin-right: 20px;}
+.side_circle span{display: block;width: 14px;height: 14px;background: #0561FF;border-radius:50%;}
+.side_title{margin-right: 15px;}
+.side_num{color: #0561FF;}
+/*表格*/
+.side_table{width: 100%;margin-top: 20px;}
+.side_table tr{border-bottom: 1px solid #ccc;}
+.side_table tr:nth-child(1){background: #ECF0F6;border-bottom: 1px solid #ECF0F6;}
+.side_table tr:hover{background: #F2F7FB;cursor: default;}
+.side_table tr:nth-child(1):hover{background: #ECF0F6;}
+.side_table tr th{text-align: left;padding: 11px 5px 10px;}
+.side_table tr td{font-size: 12px;text-align: left;padding: 12px 5px 11px;}
+.side_table tr th:nth-child(1),.side_table tr td:nth-child(1){padding-left: 30px;}
+/*暂无数据*/
+.no_data{color: #999;margin-top: 20px;padding-left: 34px;}

@@ -1,0 +1,14 @@
+.content{}
+/*右侧内容*/
+.side_right{}
+.side_title{height: 60px;;line-height: 60px;border-bottom: 1px solid #EDEDED;font-size: 16px;padding-left: 50px;}
+.side_part{padding: 0 50px;margin: 30px 0;}
+.report_time{text-align: center;font-size: 16px;}
+.report_time span:nth-child(1){margin-right: 30px;}
+.report_title{height: 24px;line-height: 24px;border-left: 4px solid #1C7BF9;padding-left: 20px;font-size: 16px;margin-bottom: 20px;}
+.today_finish,.tomorrow_plan,.leader_comments{border: 1px solid #D2D2D2;border-radius:5px;min-height: 140px;padding: 15px 25px;color: #666;}
+.sub_div{text-align: center;}
+.sub{margin-top: 30px;width: 180px;height: 40px;border-radius: 5px;outline: none;cursor: pointer;font-size: 16px;background: #1C7BF9;border: 1px solid #1C7BF9;color: #fff;}
+.sub:hover{background: #25A1FB;}
+
+

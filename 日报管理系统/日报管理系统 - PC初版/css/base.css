@@ -1,0 +1,9 @@
+*{margin: 0;padding: 0;}
+.container{width: 1200px;margin: auto;color: #333;font-size: 14px;margin-bottom: 20px;}
+.cf {clear: both;}
+.cf:after {content: '';clear: both;overflow: hidden;display: block;height: 0;font-size: 0;}
+.fl{float: left;}
+.fr{float: right;}
+/* 返回 */
+.b_back{width:100px;text-align: center;font-size: 14px;color: #666;height: 30px;line-height: 30px;margin-bottom: 30px;cursor: pointer;}
+.b_back:hover{background: #eee;}

@@ -1,0 +1,64 @@
+/*侧边栏 - 右侧*/
+.side_part{padding-top: 40px;}
+.side_title{padding-right: 40px;width: 165px;line-height: 24px;text-align: right;}
+.side_content{color: #B4B4B4;line-height: 20px;}
+.side_content_p{margin-bottom: 30px;}
+/*签约企业名称*/
+.signing_company_name{color: #333;line-height: 24px;}
+/*企业类型 - 下拉框*/
+.filter-text{height: 32px;border: 1px solid #ccc;border-radius: 4px;cursor: pointer;}
+.filter-text .filter-title{height: 30px;line-height: 30px;outline: none;color: #333;}
+.enterprise_type_tip{color: #FC5F65;font-weight: bold;line-height: 32px;margin-left: 20px;}
+/*营业执照、组织代码证*/
+.yyzz_show{margin-bottom: 30px;}
+.yyzz_img{width: 92px;height: 92px;text-align: center;line-height: 92px;background: #E5EEFF;border: 1px solid #C8DBFF;border-radius:5px;padding: 5px;position: relative;cursor: pointer;margin-right: 30px;}
+.yyzz_img img{max-width: 80px;max-height: 80px;}
+/*遮罩*/
+.yyzz_img:hover .yyzz_zz{display: block;}
+.yyzz_img .yyzz_zz{position: absolute;top: 0;left: 0;width: 100%;height: 100%;border-radius:5px;background: rgba(0,0,0,0.4);color: #fff;display: none;}
+.yyzz_img .yyzz_zz .yyzz_close{position: absolute;right: 6px;top: 6px;width: 16px;height: 16px;background: url(../images/del.png);}
+.yyzz_img .yyzz_zz .yyzz_close:hover{background: url(../images/del-hover.png);}
+.btn_yyzz{width: 92px;height: 36px;border-radius: 5px;background: #E5EEFF;border: 1px solid #C8DBFF;color: #0561FF;outline: none;cursor: pointer;position: relative;}
+.btn_yyzz input{width: 100%;height: 100%;position: absolute;top: 0;left: 0;opacity: 0;cursor: pointer;}
+.over_5{color: #FC5F65;font-weight: bold;line-height: 32px;margin-left: 20px;}
+/*法人证明材料*/
+.upload_pic_finish,.upload_pic_no{}
+.upload_pic_finish>div,.upload_pic_no>div{margin-right: 30px;}
+.id_pic1,.id_pic2{width: 142px;height: 90px;text-align: center;line-height: 90px;padding: 6px 5px;border: 1px dashed #0561FF;border-radius: 5px;cursor: pointer;position: relative;}
+.id_pic1 input,.id_pic2 input{width: 100%;height: 100%;position: absolute;top: 0;left: 0;opacity: 0;cursor: pointer;}
+.id_pic1_1,.id_pic2_2{background: #E5EEFF;width: 100%;height: 100%;position: relative;line-height: 76px;}
+.id_pic1_1 img,.id_pic2_2 img{max-width: 130px;max-height: 76px;}
+
+/*遮罩*/
+.id_pic1_1:hover .id_pic_zz,.id_pic2_2:hover .id_pic_zz{display: block;}
+.id_pic_zz{position: absolute;top: 0;left: 0;width: 100%;height: 100%;border-radius:5px;background: rgba(0,0,0,0.4);color: #fff;display: none;}
+.id_pic_zz .id_pic_close{position: absolute;right: 6px;top: 6px;width: 16px;height: 16px;background: url(../images/del.png);}
+.id_pic_zz .id_pic_close:hover{background: url(../images/del-hover.png);}
+.id_pic_title{color: #0561FF;text-align: center;margin-top: 20px;}
+/*签约合同*/
+.contract{margin-bottom: 30px;}
+.contract_pdf{color: #666;margin-right: 40px;}
+.contract_del{color: #0561FF;}
+.contract_del:hover{text-decoration: underline;cursor: pointer;}
+.btn_download_muban,.btn_qyht{width: 120px;height: 36px;border-radius: 5px;background: #E5EEFF;border: 1px solid #C8DBFF;color: #0561FF;outline: none;cursor: pointer;}
+.btn_qyht{width: 92px;margin-left: 30px;position: relative;}
+.btn_qyht input{width: 100%;height: 100%;position: absolute;top: 0;left: 0;opacity: 0;cursor: pointer;}
+/*协议打钩*/
+.agree_contract{padding-left: 164px;margin-top: 40px;font-size:12px;}
+.agree_right{display: inline-block;position: relative;width: 16px;height: 16px;border: 1px solid #C8DBFF;cursor: pointer;margin-right: 10px;}
+.agree_right:hover{border: 1px solid #4C9BF0;}
+.tick:before,.tick:after{content: '';pointer-events: none;position: absolute;border: 1px solid #0561FF;}
+.tick:before{width: 1px;height: 0px;left: 22%;top: 50%;transform: skew(0deg, 50deg);}
+.tick:after{width: 4px;height: 0px;left: 42%;top: 40%;transform: skew(0deg, -50deg);}
+.agree_contract a{color: #666;}
+.agree_contract a:hover{color: #0561FF;text-decoration: underline;}
+/*我要签约*/
+.signing{padding-left: 164px;margin-top: 24px;}
+.sub{width: 140px;height: 40px;background: #0561FF;border: 1px solid #0561FF;color: #fff;font-weight: bold;cursor: pointer;outline: none;border-radius: 5px;margin-bottom: 100px;}
+.sub:hover{background: #4C9BF0;border: 1px solid #4C9BF0;}
+/*hover*/
+.btn_yyzz:hover,.btn_download_muban:hover,.btn_qyht:hover{color: #4C9BF0;}
+/*图片放大显示*/
+.mask{position: fixed;left: 0;top: 0;right: 0;bottom: 0;background: rgba(0,0,0,0.7);text-align: center;display: none;}
+.mask_close{position: fixed;top: 70px;right: 50px;width: 40px;height: 40px;background: url(../images/big_close.png);cursor: pointer;}
+#big_img_show{max-width: 800px;}

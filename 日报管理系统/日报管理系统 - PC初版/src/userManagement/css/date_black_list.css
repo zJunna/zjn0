@@ -1,0 +1,21 @@
+.container{width: 800px;margin-top: 150px;padding: 40px 50px;font-size: 16px;-moz-box-shadow: 5px 5px 30px #999;-webkit-box-shadow: 5px 5px 30px #999;box-shadow: 5px 5px 30px #999;}
+.date_choose{padding: 20px 0;}
+.date_choose div:nth-child(1){margin-right: 30px;}
+.date_choose div span{display: block;float: left;height: 34px;line-height: 34px;}
+.date_choose div input{float: left;width: 198px;height: 32px;border: 1px solid #ccc;text-indent: 10px;}
+.insert{background: #d7d12e;width: 80px;text-align: center;height: 38px;line-height: 38px;color: #fff;cursor: pointer;border: 1px solid #d7d12e;border-radius: 8px;outline: none;font-size: 14px;}
+.insert:hover{background: #ede73a;border: 1px solid #ccc;color: #666;}
+.insert:active{color: #333;}
+.table{border-collapse: collapse;width: 100%;}
+.table th,.table td{border: 1px solid #666;text-align: center;padding: 10px 0;}
+.edit,.del{cursor: pointer;}
+.edit:hover,.del:hover{text-decoration: underline;}
+.btn{float: right;margin: 40px 0 20px;}
+.sub{background: #15c2f5;width: 120px;text-align: center;height: 38px;line-height: 38px;color: #fff;cursor: pointer;border: 1px solid #15c2f5;border-radius: 8px;outline: none;font-size: 16px;}
+.sub:hover{background: #00aeff;border: 1px solid #ccc;}
+.sub:active{color: #666;}
+/*分页*/
+.paging{text-align: center;font-size: 14px;color: #666;margin-top: 50px;}
+.page_list{border: 1px solid #ccc;padding: 8px 20px;margin-right: 10px;cursor: pointer;border-radius: 5px;}
+.page_list:hover{color: #15c2f5;border: 1px solid #15c2f5;}
+.page_now,.page_all{float: right;margin-left: 15px;}

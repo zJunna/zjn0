@@ -1,0 +1,25 @@
+/*侧边栏*/
+.nav_instructions{}
+.instructions_title{padding-left: 30px;font-size: 16px;color: #42424C;height: 42px;line-height: 42px;cursor: pointer;}
+.instructions_title img{margin-right: 5px;}
+
+.instructions_side{}
+.instructions_side li a{display: block;padding-left: 70px;height: 42px;line-height: 42px;color: #666;cursor: pointer;}
+.instructions_side li a span{margin-left: 5px;}
+.instructions_side li a:hover{color: #0561FF;}
+.instructions_active a{color: #0561FF !important;}
+/*内容*/
+.content{padding-top: 50px;padding-bottom: 100px;letter-spacing: 1px;}
+.agreement_content{width: 860px;margin: auto;}
+.agreement_title{text-align: center;font-size: 18px;font-weight:bold;}
+.agreement_part,.jump{margin-top: 30px;line-height: 24px;}
+.agreement_part p,.jump p{line-height: 24px;}
+.agreement_part p img,.jump p img{width: 100%;height: auto;margin-top: 10px;margin-bottom: 20px;cursor: pointer;}
+
+/*侧边栏定位*/
+.side_bar{position: fixed;top: 0;left: 0;height: 100%;}
+
+/*图片放大显示*/
+.mask{position: fixed;left: 0;top: 0;right: 0;bottom: 0;background: rgba(0,0,0,0.8);text-align: center;display: none;}
+.mask_close{position: fixed;top: 70px;right: 50px;width: 40px;height: 40px;background: url(../images/big_close.png);cursor: pointer;}
+#big_img_show{min-width: 1200px;width: 80%;}

@@ -1,0 +1,23 @@
+/*侧边栏 - 右侧*/
+.side_part{padding-top: 40px;}
+.side_title{padding-right: 40px;width: 165px;line-height: 24px;text-align: right;}
+.side_content{color: #B4B4B4;line-height: 20px;}
+.side_content_p{margin-bottom: 30px;}
+/*签约企业名称*/
+.signing_company_name{color: #333;line-height: 24px;}
+/*合同类型 - 下拉框*/
+.filter-text{height: 32px;border: 1px solid #ccc;border-radius: 4px;cursor: pointer;}
+.filter-text .filter-title{height: 30px;line-height: 30px;outline: none;color: #333;}
+.contracts_type_tip{color: #FC5F65;font-weight: bold;line-height: 32px;margin-left: 20px;}
+/*合同模板*/
+.contract{margin-bottom: 30px;}
+.contract_pdf{color: #666;margin-right: 40px;}
+.contract_del{color: #0561FF;}
+.contract_del:hover{text-decoration: underline;cursor: pointer;}
+.btn_mb{width: 92px;height: 36px;border-radius: 5px;background: #E5EEFF;border: 1px solid #C8DBFF;color: #0561FF;outline: none;cursor: pointer;position: relative;}
+.btn_mb input{width: 100%;height: 100%;position: absolute;top: 0;left: 0;opacity: 0;cursor: pointer;}
+.btn_mb:hover{color: #4C9BF0;}
+/*我要签约*/
+.signing{padding-left: 164px;margin-top: 24px;}
+.sub{width: 140px;height: 40px;background: #0561FF;border: 1px solid #0561FF;color: #fff;font-weight: bold;cursor: pointer;outline: none;border-radius: 5px;margin-bottom: 100px;}
+.sub:hover{background: #4C9BF0;border: 1px solid #4C9BF0;}

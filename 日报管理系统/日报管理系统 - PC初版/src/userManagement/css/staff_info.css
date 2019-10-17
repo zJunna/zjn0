@@ -1,0 +1,13 @@
+.container{width: 800px;margin-top: 150px;padding: 40px 50px;font-size: 16px;-moz-box-shadow: 5px 5px 30px #999;-webkit-box-shadow: 5px 5px 30px #999;box-shadow: 5px 5px 30px #999;}
+ul{list-style: none;}
+ul li{float: left;width: 50%;margin-bottom: 20px;}
+ul li div{float: left;}
+ul li div:nth-child(1){width: 100px;line-height: 40px;}
+ul li div:nth-child(2) input{width: 198px;height: 38px;border: 1px solid #ccc;text-indent: 10px;}
+.btn{float: right;margin: 40px 100px 20px;}
+.sub{background: #15c2f5;width: 120px;text-align: center;height: 40px;line-height: 40px;color: #fff;cursor: pointer;border: 1px solid #15c2f5;border-radius: 8px;outline: none;font-size: 16px;}
+.sub:hover{background: #00aeff;border: 1px solid #ccc;}
+.sub:active{color: #666;}
+.del{background: #ff3d3d;width: 120px;text-align: center;height: 40px;line-height: 40px;color: #fff;cursor: pointer;border: 1px solid #ff3d3d;border-radius: 8px;outline: none;font-size: 16px;margin-left: 40px;}
+.del:hover{background: #ea2727;border: 1px solid #ccc;}
+.del:active{color: #666;}

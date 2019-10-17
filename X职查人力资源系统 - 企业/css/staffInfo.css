@@ -1,0 +1,42 @@
+/*侧边栏 - 右侧*/
+.content{padding: 40px 50px 50px 40px;}
+/*右侧上边*/
+.side_top{background: #F8F9FC;padding: 0 50px;}
+.side_part{padding: 22px 40px 20px 0;}
+.side_title{font-weight:bold;margin-right: 20px;line-height: 32px;}
+.side_input input{width: 200px;height: 32px;border: 1px solid #CCC;border-radius:4px;text-indent: 10px;outline: none;}
+/*按钮*/
+.side_btn{padding-top: 22px;padding-bottom: 20px;}
+.query_btn,.reset_btn{width: 80px;height: 32px;border-radius: 4px;font-size: 14px;font-weight: bold;cursor: pointer;outline: none;}
+.query_btn{border: 1px solid #0561FF;background: #0561FF;color: #fff;margin-right: 20px;}
+.query_btn:hover{background: #4C9BF0;border: 1px solid #4C9BF0;}
+.reset_btn{border: 1px solid #ccc;background: #F8F9FC;color: #333;}
+.reset_btn:hover{background: #fff;}
+/*导出员工信息*/
+.export{margin-top: 30px;}
+.export_btn{width: 130px;height: 32px;border: 1px solid #C8DBFF;background: #E5EEFF;color: #0561FF;border-radius:4px;cursor: pointer;outline: none;}
+.export_btn:hover{color: #4C9BF0;}
+/*表格*/
+.side_table{width: 100%;margin-top: 20px;}
+.side_table tr{border-bottom: 1px solid #ccc;}
+.side_table tr:nth-child(1){background: #ECF0F6;border-bottom: 1px solid #ECF0F6;}
+.side_table tr:hover{background: #F2F7FB;cursor: default;}
+.side_table tr:nth-child(1):hover{background: #ECF0F6;cursor: default;}
+.side_table tr th{text-align: left;padding: 11px 5px 10px;}
+.side_table tr td{font-size: 12px;text-align: left;padding: 12px 5px 11px;}
+.side_table tr th:nth-child(1),.side_table tr td:nth-child(1){padding-left: 30px;}
+/*背调状态*/
+.investigation_status{color: #FC5F65;}
+/*劳动合同、签约状态*/
+.signed1,.see_details,.edit_staff{color: #0561FF;}
+.signed2{color: #FDAD4D;}
+.signed3{color: #12C0A1;}
+.signed1:hover,.signed3:hover,.edit_staff:hover,.see_details:hover{text-decoration: underline;cursor: pointer;}
+
+/*媒体查询*/
+@media (max-width: 1650px) {
+	/*右侧上边*/
+	.side_part{padding-bottom: 0px;}
+	/*按钮*/
+	.side_btn{float: left !important;}
+}

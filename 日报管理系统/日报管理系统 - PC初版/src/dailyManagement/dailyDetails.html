@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>准安用户管理-日报详情</title>
+	<link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+	<link rel="stylesheet" type="text/css" href="css/dailyDetails.css"/>
+	<script src="../../js/jquery.1.9.1.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/wangEditor.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/dailyDetails.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="header cf">
+			<div class="fl">
+				<p>报告时间：<span>201908082024</span></p>
+			</div>
+			<div class="fl">
+				<p>星期：<span>四</span></p>
+			</div>
+		</div>
+		<div class="content">
+			<p class="title">今日完成:</p>
+			<div class="today_finish">
+				
+			</div>
+		</div>
+		<div class="content">
+			<p class="title">明日计划:</p>
+			<div class="tomorrow_plan">
+				
+			</div>
+		</div>
+		<div class="content">
+			<p class="title">领导点评：</p>
+			<div id="editor">
+				
+			</div>
+		</div>
+		<div class="cf">
+			<div class="btn">
+				<button class="sub">提交</button>
+			</div>
+		</div>
+		<div class="footer">
+			<span><font>&copy;</font>山东准安互联网科技有限公司-版权所有</span><span>备案号：</span><span>鲁ICP备16009413号</span>
+		</div>
+	</div>
+	<script type="text/javascript">
+		var E = window.wangEditor
+        var editor = new E('#editor')
+        // 自定义菜单配置
+	    editor.customConfig.menus = [
+	        'head',  // 标题
+		    'bold',  // 粗体
+		    'fontSize',  // 字号
+		    'fontName',  // 字体
+		    'italic',  // 斜体
+		    'underline',  // 下划线
+		    'strikeThrough',  // 删除线
+		    'foreColor',  // 文字颜色
+		    'backColor',  // 背景颜色
+		    'link',  // 插入链接
+		    'list',  // 列表
+		    'justify',  // 对齐方式
+		    'quote',  // 引用
+		    'emoticon',  // 表情
+		    //'image',  // 插入图片
+		    'table',  // 表格
+		    //'video',  // 插入视频
+		    'code',  // 插入代码
+		    'undo',  // 撤销
+		    'redo'  // 重复
+	    ]
+        editor.create()
+	</script>
+</body>
+</html>

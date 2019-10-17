@@ -1,0 +1,41 @@
+/*侧边栏 - 右侧*/
+.content{padding: 40px 50px 50px 40px;}
+/*右侧上边*/
+.side_top{background: #F8F9FC;padding: 0 50px;}
+.side_part{padding: 22px 40px 20px 0;}
+.side_title{font-weight:bold;margin-right: 20px;line-height: 32px;}
+/*下拉框*/
+.filter-box{width:170px;height: 32px;}
+.filter-text{border-radius:4px;}
+.filter-title{height: 30px !important;outline: none;}
+/*时间*/
+.choice_time{background: #fff;width: 240px;height: 30px;text-align: center;line-height: 30px;padding-left: 15px;padding-right: 10px;border-radius: 4px;border: 1px solid #e6e6e6;}
+.time_img{padding-top: 2px;margin-right: 5px;height: 30px;}
+.choice_time input{width: 75px;height: 100%;border: none;outline: none;}
+.choice_time span{margin-left:5px;margin-right: 10px;}
+/*按钮*/
+.side_btn{padding-top: 22px;padding-bottom: 20px;}
+.query_btn,.reset_btn{width: 80px;height: 32px;border-radius: 4px;font-size: 14px;font-weight: bold;cursor: pointer;outline: none;}
+.query_btn{border: 1px solid #0561FF;background: #0561FF;color: #fff;margin-right: 20px;}
+.query_btn:hover{background: #4C9BF0;border: 1px solid #4C9BF0;}
+.reset_btn{border: 1px solid #ccc;background: #F8F9FC;color: #333;}
+.reset_btn:hover{background: #fff;}
+/*表格*/
+.side_table{width: 100%;margin-top: 60px;}
+.side_table tr{border-bottom: 1px solid #ccc;}
+.side_table tr:nth-child(1){background: #ECF0F6;border-bottom: 1px solid #ECF0F6;}
+.side_table tr:hover{background: #F2F7FB;cursor: default;}
+.side_table tr:nth-child(1):hover{background: #ECF0F6;}
+.side_table tr th{text-align: left;padding: 11px 5px 10px;}
+.side_table tr td{font-size: 12px;text-align: left;padding: 12px 5px 11px;}
+.side_table tr th:nth-child(1),.side_table tr td:nth-child(1){padding-left: 30px;}
+.see_details{color: #0561FF;}
+.see_details:hover{text-decoration: underline;cursor: pointer;}
+
+/*媒体查询*/
+@media (max-width: 1900px) {
+	/*右侧上边*/
+	.side_part{padding-bottom: 0px;}
+	/*按钮*/
+	.side_btn{float: left !important;}
+}

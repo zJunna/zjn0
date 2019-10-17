@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>涌鑫资产</title>
+    <meta name="keywords" content="涌鑫资产"/>
+	<meta name="description" content="青岛涌鑫资产管理有限公司（简称“涌鑫资管”）系由准安控股，经中国证券投资基金业协会备案登记（登记编码：P1060832），具有发起、设立并管理“私募证券投资基金”的基金管理人资质的现代化企业。公司秉承“一二级市场联动”的经营理念，全心全意为投资人提供证券投资和独立财务顾问等服务。"/>
+	<meta name="author" content="sunrong"/>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
+    <script src="js/jquery.1.7.2.js"></script>
+    <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=67jMQ5DmYTe1TLMBKFUTcZAR"></script>
+	<!-- <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script> -->
+	<!--引用百度地图API-->
+	<style type="text/css">
+		body{margin: 0; padding: 0; font:12px/1 "Microsoft Yahei", "微软雅黑", sans-serif;}
+        p, span {
+        font-family: 'Microsoft Yahei'!important;
+        }
+        .sr_map_right{width: 50%; padding-left:15px;float: left;}
+        .sr_map_left{width:28%;height:60px;float: left;}
+        .BMap_pop .BMap_top,.BMap_pop .BMap_bottom{border-top: #fff!important;}
+        .BMap_pop .BMap_center{border-left:#ffffff!important;border-right:#ffffff!important;}
+        .BMap_pop div:nth-child(1) div {border-top: #ffffff!important;border-left: #ffffff!important;    border-radius: 8px;}
+        .BMap_pop div div{border-top:#ffffff!important;border-right:#ffffff!important; border-bottom:#ffffff!important;border-left:#ffffff!important;border-radius: 8px;}
+        .BMap_bottom + div div{width: 29px!important;}
+       /*  .BMap_bubble_content{display:flex;align-items: center; } */
+       @media(max-width: 767px){
+        #allmap>div:first-of-type{
+            top: -280px!important;
+            left: -20px!important;
+        }
+     }
+     .sr_map_right:last-child{
+        line-height: 16px;
+     }
+	</style>
+</head>
+<body>
+	<!--百度地图容器-->
+	<div id="map">
+        <div style="width: 110%; height: 1000px;" id="allmap"></div>
+    </div>
+	<!--<iframe src="map.html" width="100%" height="300" frameborder="0" scrolling="no"></iframe>-->
+	
+	<script type="text/javascript">
+	$(function () {
+        ShowMap('120.395354,36.070527', '准安科技', '山东准安互联网科技有限公司', '', '', '20');
+    })
+    function getInfo(id) {
+        $.ajax({
+            type: "POST",
+            url: "WebUserControl/Contact/GetInfo.ashx",
+            cache: false,
+            async: false,
+            data: { ID: id },
+            success: function (data) {
+                data = eval(data);
+                var length = data.length;
+                if (length > 0) {
+                    ShowMap(data[0]["Image"], data[0]["NewsTitle"], data[0]["Address"], data[0]["Phone"], data[0]["NewsTags"], data[0]["NewsNum"]);
+                }
+            }
+        });
+    }
+    function ShowMap(zuobiao, name, addrsee, phone, chuanzhen, zoom) {
+        var arrzuobiao = zuobiao.split(',');
+        var map = new BMap.Map("allmap");
+        map.centerAndZoom(new BMap.Point(arrzuobiao[0], arrzuobiao[1]), zoom);
+        map.addControl(new BMap.NavigationControl());
+        var marker = new BMap.Marker(new BMap.Point(arrzuobiao[0], arrzuobiao[1]));
+        map.addOverlay(marker);
+        var infoWindow = new BMap.InfoWindow("<div class='sr_map_left'><img src='images/mapLogo.png' title='准安科技' style='width:100%;'></div>" + '<div class="sr_map_right"><p style="color: #2976EC;font-size:14px;">' + name + '</p><p>' + addrsee + '</p></div>');
+        marker.addEventListener("click", function () {
+            this.openInfoWindow(infoWindow);
+        });
+        marker.openInfoWindow(infoWindow);
+    }
+
+
+
+	</script>
+</body>
+</html>

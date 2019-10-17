@@ -1,0 +1,9 @@
+.container{width: 800px;margin-top: 150px;padding: 40px 50px;font-size: 16px;-moz-box-shadow: 5px 5px 30px #999;-webkit-box-shadow: 5px 5px 30px #999;box-shadow: 5px 5px 30px #999;}
+.pwd_list{}
+.title{float: left;width: 300px;text-align: right;height: 40px;line-height: 40px;margin-bottom: 30px;}
+.pwd_content{float: left;}
+.pwd_content input{width: 240px;height: 38px;border: 1px solid #ccc;text-indent: 10px;}
+.btn{text-align: center;}
+.sub{background: #15c2f5;width: 120px;text-align: center;height: 40px;line-height: 40px;color: #fff;cursor: pointer;border: 1px solid #15c2f5;border-radius: 8px;outline: none;font-size: 16px;}
+.sub:hover{background: #00aeff;border: 1px solid #ccc;}
+.sub:active{color: #666;}

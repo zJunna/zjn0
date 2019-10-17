@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>准安控股</title>
+	<meta name="keywords" content="准安控股"/>
+	<meta name="description" content="准安金融于2014年开始筹备，2015年诞生于上海自贸区。企业集群是由多家以准安为品牌的金融、类金融企业组成的专注于产业投资及资本管理运作的企业矩阵。2018年设立准安控股，公司进入集团化发展。自成立以来，公司秉承产融结合的经营理念，贯彻哲学辩证的投资思想，在产业运营、资本运作、投资管理等业务领域全面发展，致力于为股东创造价值，为企业提供支持，为中国经济的繁荣贡献力量。准安深入结合当代国情及行业的现状，积极延伸业务，升级服务品质，集中统筹有效资产，围绕准安主产业核心，不断升级发展模式与战略规划，淬炼激发出蓬勃活力，实现了从“资产管理”到“资本运作”的转型式发展..."/>
+	<meta name="author" content="sunrong"/>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
+    <script src="js/jquery.1.7.2.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=67jMQ5DmYTe1TLMBKFUTcZAR"></script>
+	<!-- <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script> -->
+	<!--引用百度地图API-->
+	<style type="text/css">
+		body{margin: 0; padding: 0; font:12px/1 "Microsoft Yahei", "微软雅黑", sans-serif;}
+        p, span {
+        font-family: 'Microsoft Yahei'!important;
+        }
+        .sr_map_right{width: 50%; padding-left:15px;float: left;}
+        .sr_map_left{width:28%;height:60px;float: left;}
+        .BMap_pop .BMap_top,.BMap_pop .BMap_bottom{border-top: #fff!important;}
+        .BMap_pop .BMap_center{border-left:#ffffff!important;border-right:#ffffff!important;}
+        .BMap_pop div:nth-child(1) div {border-top: #ffffff!important;border-left: #ffffff!important;    border-radius: 8px;}
+        .BMap_pop div div{border-top:#ffffff!important;border-right:#ffffff!important; border-bottom:#ffffff!important;border-left:#ffffff!important;border-radius: 8px;}
+        .BMap_bottom + div div{width: 29px!important;}
+       /*  .BMap_bubble_content{display:flex;align-items: center; } */
+       #allmap>div:first-of-type{
+         top: -50px!important;
+         left:-150px!important;
+     }
+     @media(max-width: 767px){
+        #allmap>div:first-of-type{
+            top: -200px!important;
+            left: -20px!important;
+        }
+     }
+	</style>
+</head>
+<body>
+	<!--百度地图容器-->
+	<div id="map">
+        <div style="width: 110%; height: 1000px;" id="allmap"></div>
+    </div>
+	<!--<iframe src="map.html" width="100%" height="300" frameborder="0" scrolling="no"></iframe>-->
+	
+	<script type="text/javascript">
+	$(function () {
+        ShowMap('120.395165,36.070702', '准安', '准安控股', '', '', '20');
+    })
+    function getInfo(id) {
+        $.ajax({
+            type: "POST",
+            url: "WebUserControl/Contact/GetInfo.ashx",
+            cache: false,
+            async: false,
+            data: { ID: id },
+            success: function (data) {
+                data = eval(data);
+                var length = data.length;
+                if (length > 0) {
+                    ShowMap(data[0]["Image"], data[0]["NewsTitle"], data[0]["Address"], data[0]["Phone"], data[0]["NewsTags"], data[0]["NewsNum"]);
+                }
+            }
+        });
+    }
+    function ShowMap(zuobiao, name, addrsee, phone, chuanzhen, zoom) {
+        var arrzuobiao = zuobiao.split(',');
+        var map = new BMap.Map("allmap");
+        map.centerAndZoom(new BMap.Point(arrzuobiao[0], arrzuobiao[1]), zoom);
+        map.addControl(new BMap.NavigationControl());
+        var marker = new BMap.Marker(new BMap.Point(arrzuobiao[0], arrzuobiao[1]));
+        map.addOverlay(marker);
+        var infoWindow = new BMap.InfoWindow("<div class='sr_map_left'><img src='images/logo3.png' title='准安' style='width:100%;'></div>" + '<div class="sr_map_right"><p style="color: #bf0008;font-size:14px;">' + name + '</p><p>' + addrsee + '</p></div>');
+        marker.addEventListener("click", function () {
+            this.openInfoWindow(infoWindow);
+        });
+        marker.openInfoWindow(infoWindow);
+    }
+
+
+
+	</script>
+</body>
+</html>

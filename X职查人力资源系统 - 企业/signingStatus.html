@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>X职查-人力资源系统</title>
+	<meta name="keywords" content="职场信用，职信，员工征信，职场征信查询"/>
+	<meta name="description" content="X职查是一个职场信用共享与查询平台。在X职查平台企业可以把员工的守信和失信行为在系统里共享，也可以在雇佣前或雇佣中查询员工的职场征信。X职查是一个专业的区块链职业信用查询平台。"/>
+	<meta name="author" content="xiangyang"/>
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
+	<link rel="stylesheet" type="text/css" href="css/Eject.css"/>
+	<link rel="stylesheet" type="text/css" href="css/selectFilter.css"/>
+	<link rel="stylesheet" type="text/css" href="css/base.css"/>
+	<link rel="stylesheet" type="text/css" href="css/signingStatus.css"/>
+	<script src="js/jquery.1.9.1.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/Eject.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/selectFilter.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/base.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/signingStatus.js" type="text/javascript" charset="utf-8"></script>
+	<!--[if lte IE 8]>
+		<div>
+			你正在使用一个 <strong>过时</strong> 的浏览器。请 <a href=https://browsehappy.com/ target=_blank>升级您的浏览器</a>，以提高您的体验。
+		</div>
+	<![endif]-->
+</head>
+<body>
+	<div class="container">
+		<div class="cf">
+			<!--侧边栏-->
+			<div class="side_bar fl">
+				<div class="logo">
+					<img src="images/logo.png" alt="X职查-人力资源系统" title="X职查-人力资源系统"/>
+				</div>
+				<!--导航栏-->
+				<div class="nav">
+					<div class="nav_title">签约管理</div>
+					<ul class="nav_side">
+						<li>我要签约</li>
+						<li class="nav_active">签约状态</li>
+					</ul>
+					<div class="nav_title">员工管理</div>
+					<ul class="nav_side">
+						<li>新增员工</li>
+						<li>员工信息</li>
+						<li>解绑员工</li>
+					</ul>
+				</div>
+			</div>
+			<!--右边内容-->
+			<div class="side_right fr">
+				<!--头部-->
+				<div class="header">
+					<div class="sign_out fr">
+						<img src="images/sign_out.png"/>
+						<div class="log_out">退出登录</div>
+					</div>
+					<div class="company_name fr">
+						<span>青岛XXX有限公司</span>
+					</div>
+					<div class="tx fr">
+						<img src="images/tx.png"/>
+					</div>
+				</div>
+				<!--内容-->
+				<div class="content">
+					<div class="signing_fail_tip">
+						<span>签约失败，请按要求重新提交资料。</span>
+						<img src="images/fail.png" align="absmiddle"/>
+					</div>
+					<div class="signing_wait_tip">
+						<span>您已提交成功，等待管理员审核。</span>
+						<p>预计3-5个工作日审核完毕，审核结果会以短信形式通知到您的手机上。</p>
+					</div>
+					<div class="signing_success_tip">
+						<span>您已成功签约！</span>
+						<img src="images/success.png" align="absmiddle"/>
+					</div>
+					<div class="side_part cf">
+						<div class="side_title fl">
+							签约企业名称
+						</div>
+						<div class="side_content fl">
+							<span class="signing_company_name">青岛XXX有限公司</span>
+						</div>
+					</div>
+					<div class="side_part cf">
+						<div class="side_title fl">
+							企业类型
+						</div>
+						<div class="side_content fl">
+							<div class="filter-box">
+								<div class="filter-text">
+									<input class="filter-title" type="text" readonly placeholder="请选择" />
+									<i class="icon icon-filter-arrow"></i>
+								</div>
+								<select name="filter">
+									<option value="" disabled>企业类型</option>
+									<option value="有限责任公司">有限责任公司</option>
+									<option value="股份责任公司">股份责任公司</option>
+									<option value="集体所有制">集体所有制</option>
+									<option value="国有企业">国有企业</option>
+									<option value="个体工商户">个体工商户</option>
+									<option value="个人独资企业">个人独资企业</option>
+									<option value="有限合伙">有限合伙</option>
+									<option value="普通合伙">普通合伙</option>
+									<option value="外商投资企业">外商投资企业</option>
+									<option value="港、澳、台">港、澳、台</option>
+									<option value="联营企业">联营企业</option>
+									<option value="私营企业">私营企业</option>
+								</select>
+							</div>
+						</div>
+						<div class="enterprise_type_tip fl">
+							请选择企业类型
+						</div>
+					</div>
+					<div class="side_part cf">
+						<div class="side_title fl">
+							营业执照或<br/>组织代码证
+						</div>
+						<div class="side_content fl">
+							<div class="side_content_p">
+								<p>需提交企业《营业执照》或《组织代码证》原件扫描件，复印件请务必加盖公司公章。</p>
+								<p>1、请确保信息区域拍摄清晰。</p>
+								<p>2、仅支持jpg、png、gif 格式，上传文件需小于2MB。</p>
+							</div>
+							<div class="yyzz_tip">
+								<p>上传图片与要求不符，请正确上传《营业执照》图片！</p>
+								<p>上传图片模糊，请按要求上传拍摄清晰的图片！</p>
+								<p>《营业执照》复印件未按要求加盖公章，请加盖公章后重新上传！</p>
+								<p>上传《营业执照》图片不完整，请确保包含所有信息区域！</p>
+								<p>《营业执照》信息与公司主体不符，请重新上传与公司主体对应的《营业执照》！</p>
+							</div>
+							<div class="yyzz_show cf">
+								<div class="yyzz_img fl">
+									<img src="images/2.jpg"/>
+									<div class="yyzz_zz preview">
+										<div class="yyzz_close"></div>
+										<span>预览</span>
+									</div>
+								</div>
+								<div class="yyzz_img fl">
+									<img src="images/3.jpg"/>
+									<div class="yyzz_zz preview">
+										<div class="yyzz_close"></div>
+										<span>预览</span>
+									</div>
+								</div>
+							</div>
+							<button class="btn_yyzz fl">
+								重新上传
+								<input type="file" value="上传文件" />
+							</button>
+							<div class="over_5 fl">最大上传数量5张</div>
+						</div>
+					</div>
+					<div class="side_part cf">
+						<div class="side_title fl">
+							法人证明材料
+						</div>
+						<div class="side_content fl">
+							<div class="side_content_p">
+								<p>请提交法人身份证人像面和国徽面图片。</p>
+								<p>1、请确保身份信息区域边框完成，字迹清晰。</p>
+								<p>2、仅支持jpg、png、gif 格式，上传文件需小于2MB。</p>
+							</div>
+							<div class="upload_pic_finish cf">
+								<div class="fl">
+									<div class="id_pic1">
+										<div class="id_pic1_1">
+											<img src="images/id1.png"/>
+											<div class="id_pic_zz preview">
+												<div class="id_pic_close"></div>
+												<span>预览</span>
+											</div>
+										</div>
+									</div>
+									<div class="id_pic_title">上传人像面照片</div>
+								</div>
+								<div class="fl">
+									<div class="id_pic2">
+										<div class="id_pic2_2">
+											<img src="images/id2.png"/>
+											<div class="id_pic_zz preview">
+												<div class="id_pic_close"></div>
+												<span>预览</span>
+											</div>
+										</div>
+									</div>
+									<div class="id_pic_title">上传国徽面照片</div>
+								</div>
+							</div>
+							<div class="upload_pic_no cf">
+								<div class="fl">
+									<div class="id_pic1">
+										<div class="id_pic1_1">
+											<img src="images/id1.png"/>
+										</div>
+										<input type="file" value="上传文件" />
+									</div>
+									<div class="id_pic_title">上传人像面照片</div>
+								</div>
+								<div class="fl">
+									<div class="id_pic2">
+										<div class="id_pic2_2">
+											<img src="images/id2.png"/>
+										</div>
+										<input type="file" value="上传文件" />
+									</div>
+									<div class="id_pic_title">上传国徽面照片</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="side_part cf">
+						<div class="side_title fl">
+							签约合同
+						</div>
+						<div class="side_content fl">
+							<div class="side_content_p">
+								<p>请先下载电子合同，请务必详细阅读合同文本，加盖公司公章后，重新上传文件。</p>
+								<p>1、请确保身份信息区域边框完成，字迹清晰。</p>
+								<p>2、上传文件仅支持PDF格式，上传文件需小于10MB。</p>
+							</div>
+							<div class="contract">
+								<span class="contract_pdf">青岛纸样科技有限公司劳务派遣合同.pdf</span>
+								<span class="contract_del">删除</span>
+							</div>
+							<button class="btn_download_muban">下载合同模板</button>
+							<button class="btn_qyht">
+								上传文件
+								<input type="file" value="上传文件" />
+							</button>
+						</div>
+					</div>
+					<div class="agree_contract cf">
+						<span class="agree_right fl"></span>
+						<a href="electronicAgreement.html" class="fl" target="_blank">请仔细阅读签约电子协议</a>
+					</div>
+					<div class="signing">
+						<button class="sub">我要签约</button>
+					</div>
+				</div>
+				<!--底部-->
+				<div class="footer">
+					<div class="footer1">
+						<a href="http://www.zhunankeji.com/" target="_blank">准安科技</a>
+						<span>/</span>
+						<a href="https://www.zhunan.com/" target="_blank">准安控股</a>
+						<span>/</span>
+						<a href="http://www.zhunanjinrong.com/" target="_blank">准安金融</a>
+						<span>/</span>
+						<a href="http://www.yongxinzichan.com/" target="_blank">涌鑫资产</a>
+						<span>/</span>
+						<a href="http://www.sandurong.com/" target="_blank">三度融</a>
+						<span>/</span>
+						<a href="https://www.lmjf2019.com/" target="_blank">链盟金服</a>
+						<span>/</span>
+						<a href="https://www.qianshangqian.com/" target="_blank">钱上钱</a>
+						<span>/</span>
+						<a href="https://www.xzhicha.com/" target="_blank">X职查</a>
+						<span>/</span>
+						<a href="http://www.laimitouzi.com/" target="_blank">来米投资</a>
+						<span>/</span>
+						<a href="https://www.gerensuodeshui.cn/" target="_blank">薪资计算器</a>
+					</div>
+					<div class="footer2">
+						<span>山东准安互联网科技有限公司-版权所有</span>
+						<span>ICP备案号：鲁ICP备16009413号</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--图片放大显示-->
+		<div class="mask">
+			<div class="mask_close"></div>
+			<img id="big_img_show" src=""/>
+		</div>
+	</div>
+</body>
+</html>

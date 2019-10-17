@@ -1,0 +1,30 @@
+.content{}
+/*右侧内容*/
+.side_right{}
+.side_title{height: 60px;;line-height: 60px;border-bottom: 1px solid #EDEDED;font-size: 16px;padding-left: 50px;}
+/*下载表格*/
+.side_part{padding: 0 50px;margin-top: 40px;}
+.download{width: 120px;height: 44px;background: #1C7BF9;border: 1px solid #1C7BF9;color: #fff;font-weight: bold;cursor: pointer;outline: none;border-radius: 5px;}
+.download img{float: left;margin-left: 20px;}
+.download:hover{background: #25A1FB;border: 1px solid #1C7BF9;color: #fff;}
+.download:active{color: #333;}
+/*选择时间*/
+.choose_time{border: 1px solid #D2D2D2;width: 338px;height: 38px;line-height: 38px;margin-right: 40px;}
+.choose_time span{padding-left: 32px;}
+.choose_time input{float: right;width: 200px;height: 38px;border: none;text-align: right;outline: none;padding-right: 30px;cursor: pointer;}
+.date_screen{width: 100px;height: 40px;border: 1px solid #1C7BF9;border-radius: 5px;color: #1C7BF9;background: #fff;outline: none;cursor: pointer;}
+.date_screen:hover{background: #1C7BF9;border: 1px solid #EAEAEA;color: #fff;}
+.date_screen:active{color: #333;}
+/*表格*/
+.table{border-collapse: collapse;width: 100%;margin-top: 50px;overflow: hidden;}
+.table th,.table td{border: 1px solid #D2D2D2;text-align: center;padding: 10px 0;}
+/*分页*/
+.paging{text-align: center;margin-top: 60px;}
+.page_list{border: 1px solid #C1C1C1;padding: 8px 16px;margin-right: 20px;cursor: pointer;border-radius: 5px;color: #666;}
+.page_list:hover{border: 1px solid #1C7BF9;color: #1C7BF9;}
+.page_now,.page_all{float: right;margin-left: 15px;color: #666;}
+
+
+
+
+

@@ -1,0 +1,9 @@
+/*侧边栏 - 右侧*/
+.content{padding: 60px 160px;}
+.signing_tip{font-size:18px;color: #0561FF;}
+.signing_tip span:nth-child(2){font-weight: bold;margin: 0 5px;}
+.signing_btn{margin-top: 60px;}
+.signing_confirm,.signing_cancle{width:140px;height:40px;border-radius:5px;background: #0561FF;border: 1px solid #0561FF;color: #fff;font-weight:bold;cursor: pointer;outline: none;}
+.signing_cancle{background: #E5EEFF;border: 1px solid #C8DBFF;color: #0561FF;margin-left: 30px;}
+.signing_confirm:hover{background: #4C9BF0;border: 1px solid #4C9BF0;}
+.signing_cancle:hover{color: #4C9BF0;}

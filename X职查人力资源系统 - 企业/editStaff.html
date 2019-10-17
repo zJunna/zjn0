@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>X职查-人力资源系统</title>
+	<meta name="keywords" content="职场信用，职信，员工征信，职场征信查询"/>
+	<meta name="description" content="X职查是一个职场信用共享与查询平台。在X职查平台企业可以把员工的守信和失信行为在系统里共享，也可以在雇佣前或雇佣中查询员工的职场征信。X职查是一个专业的区块链职业信用查询平台。"/>
+	<meta name="author" content="xiangyang"/>
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
+	<link rel="stylesheet" type="text/css" href="css/Eject.css"/>
+	<link rel="stylesheet" type="text/css" href="css/jedate.css"/>
+	<link rel="stylesheet" type="text/css" href="css/selectFilter.css"/>
+	<link rel="stylesheet" type="text/css" href="css/base.css"/>
+	<link rel="stylesheet" type="text/css" href="css/editStaff.css"/>
+	<script src="js/jquery.1.9.1.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/Eject.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jedate.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/selectFilter.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/base.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/editStaff.js" type="text/javascript" charset="utf-8"></script>
+	<!--[if lte IE 8]>
+		<div>
+			你正在使用一个 <strong>过时</strong> 的浏览器。请 <a href=https://browsehappy.com/ target=_blank>升级您的浏览器</a>，以提高您的体验。
+		</div>
+	<![endif]-->
+</head>
+<body>
+	<div class="container">
+		<div class="cf">
+			<!--侧边栏-->
+			<div class="side_bar fl">
+				<div class="logo">
+					<img src="images/logo.png" alt="X职查-人力资源系统" title="X职查-人力资源系统"/>
+				</div>
+				<!--导航栏-->
+				<div class="nav">
+					<div class="nav_title">签约管理</div>
+					<ul class="nav_side">
+						<li>我要签约</li>
+						<li>签约状态</li>
+					</ul>
+					<div class="nav_title">员工管理</div>
+					<ul class="nav_side">
+						<li>新增员工</li>
+						<li class="nav_active">员工信息</li>
+						<li>解绑员工</li>
+					</ul>
+				</div>
+			</div>
+			<!--右边内容-->
+			<div class="side_right fr">
+				<!--头部-->
+				<div class="header">
+					<div class="sign_out fr">
+						<img src="images/sign_out.png"/>
+						<div class="log_out">退出登录</div>
+					</div>
+					<div class="company_name fr">
+						<span>青岛XXX有限公司</span>
+					</div>
+					<div class="tx fr">
+						<img src="images/tx.png"/>
+					</div>
+				</div>
+				<!--内容-->
+				<div class="content">
+					<div class="side_part cf">
+						<div class="wid35 fl">
+							<span>公司名称</span>
+						</div>
+						<div class="wid65 fl">
+							<input class="wid400 fl" type="text" placeholder="请输入公司名称" value="锤子科技（北京）股份有限公司" disabled maxlength="40"/>
+						</div>
+					</div>
+					<div class="side_part cf">
+						<div class="wid35 fl">
+							<span>员工姓名</span>
+						</div>
+						<div class="wid65 fl">
+							<input class="wid160 fl" type="text" placeholder="请输入员工姓名" maxlength="10"/>
+							<div class="tip fl">请填写员工姓名</div>
+						</div>
+					</div>
+					<div class="side_part cf">
+						<div class="wid35 fl">
+							<span>入职日期</span>
+						</div>
+						<div class="wid65 fl choose_date">
+							<input id="choose_date" class="wid160 fl" type="text" placeholder="请选择入职日期" maxlength="20" />
+							<img src="images/drop_down.png"/>
+							<div class="tip fl">请选择入职日期</div>
+						</div>
+					</div>
+					<div class="side_part cf">
+						<div class="wid35 fl">
+							<span>员工状态</span>
+						</div>
+						<div class="wid65 fl">
+							<input class="wid160 fl" type="text" placeholder="请输入员工状态" maxlength="10"/>
+							<div class="tip fl">请填写员工状态</div>
+						</div>
+					</div>
+					<div class="side_part cf">
+						<div class="wid35 fl">
+							<span>岗位名称</span>
+						</div>
+						<div class="wid65 fl">
+							<input class="wid200 fl" type="text" placeholder="请输入岗位名称" maxlength="40"/>
+							<div class="tip fl">请填写岗位名称</div>
+						</div>
+					</div>
+					<div class="side_part cf">
+						<div class="wid35 fl">
+							<span>岗位薪资(元)</span>
+						</div>
+						<div class="wid65 fl">
+							<input class="wid160 fl" type="text" placeholder="请输入岗位薪资(元)" maxlength="10"/>
+							<div class="tip fl">请填写岗位薪资(元)</div>
+						</div>
+					</div>
+					<div class="side_part cf">
+						<div class="wid35 fl">
+							<span>手机号码</span>
+						</div>
+						<div class="wid65 fl">
+							<input class="wid200 fl" type="text" placeholder="请输入手机号码" maxlength="20"/>
+							<div class="tip fl">请填写手机号码</div>
+						</div>
+					</div>
+					<div class="side_part cf">
+						<div class="wid35 fl">
+							<span>身份证号</span>
+						</div>
+						<div class="wid65 fl">
+							<input class="wid200 fl" type="text" placeholder="请输入身份证号" maxlength="20"/>
+							<div class="tip fl">请填写身份证号</div>
+						</div>
+					</div>
+					<div class="side_part cf">
+						<div class="wid35 fl">
+							<span>社保金额(元)</span>
+						</div>
+						<div class="wid65 fl">
+							<input class="wid160 fl" type="text" placeholder="请输入社保金额(元)" maxlength="10"/>
+						</div>
+					</div>
+					<div class="side_part cf">
+						<div class="wid35 fl">
+							<span>公积金(元)</span>
+						</div>
+						<div class="wid65 fl">
+							<input class="wid160 fl" type="text" placeholder="请输入公积金(元)" maxlength="10"/>
+						</div>
+					</div>
+					<div class="side_part cf">
+						<div class="wid35 fl">
+							<span>现住址</span>
+						</div>
+						<div class="wid65 fl">
+							<textarea class="wid400 textarea fl" placeholder="请输入现住址" maxlength="100"></textarea>
+							<div class="tip fl">请填写现住址</div>
+						</div>
+					</div>
+					<div class="side_part cf">
+						<div class="wid35 fl">
+							<span>家庭住址</span>
+						</div>
+						<div class="wid65 fl">
+							<textarea class="wid400 textarea fl" placeholder="请输入家庭住址" maxlength="100"></textarea>
+							<div class="tip fl">请填写家庭住址</div>
+						</div>
+					</div>
+					<div class="side_part cf">
+						<div class="wid35 fl">
+							<span>紧急联系人姓名</span>
+						</div>
+						<div class="wid65 fl">
+							<input class="wid200 fl" type="text" placeholder="请输入紧急联系人姓名" maxlength="10"/>
+						</div>
+					</div>
+					<div class="side_part cf">
+						<div class="wid35 fl">
+							<span>紧急联系人电话</span>
+						</div>
+						<div class="wid65 fl">
+							<input class="wid200 fl" type="text" placeholder="请输入紧急联系人电话" maxlength="20"/>
+						</div>
+					</div>
+					<div class="side_part cf">
+						<div class="wid35 fl">
+							<span>与联系人关系</span>
+						</div>
+						<div class="wid65 fl">
+							<input class="wid200 fl" type="text" placeholder="请输入与联系人关系" maxlength="10"/>
+						</div>
+					</div>
+					<div class="side_part add_btn cf">
+						<div class="wid65 fr">
+							<button class="add_cancel">取消修改</button>
+							<button class="add_save">保存并修改</button>
+						</div>
+					</div>
+				</div>
+				<!--底部-->
+				<div class="footer">
+					<div class="footer1">
+						<a href="http://www.zhunankeji.com/" target="_blank">准安科技</a>
+						<span>/</span>
+						<a href="https://www.zhunan.com/" target="_blank">准安控股</a>
+						<span>/</span>
+						<a href="http://www.zhunanjinrong.com/" target="_blank">准安金融</a>
+						<span>/</span>
+						<a href="http://www.yongxinzichan.com/" target="_blank">涌鑫资产</a>
+						<span>/</span>
+						<a href="http://www.sandurong.com/" target="_blank">三度融</a>
+						<span>/</span>
+						<a href="https://www.lmjf2019.com/" target="_blank">链盟金服</a>
+						<span>/</span>
+						<a href="https://www.qianshangqian.com/" target="_blank">钱上钱</a>
+						<span>/</span>
+						<a href="https://www.xzhicha.com/" target="_blank">X职查</a>
+						<span>/</span>
+						<a href="http://www.laimitouzi.com/" target="_blank">来米投资</a>
+						<span>/</span>
+						<a href="https://www.gerensuodeshui.cn/" target="_blank">薪资计算器</a>
+					</div>
+					<div class="footer2">
+						<span>山东准安互联网科技有限公司-版权所有</span>
+						<span>ICP备案号：鲁ICP备16009413号</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

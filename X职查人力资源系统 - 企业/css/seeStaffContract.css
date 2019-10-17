@@ -1,0 +1,14 @@
+/*侧边栏 - 右侧*/
+.side_part{padding-top: 40px;}
+.side_title{padding-right: 40px;width: 165px;line-height: 24px;text-align: right;}
+.side_content{color: #B4B4B4;line-height: 20px;}
+/*派遣企业名称*/
+.signing_company_name{color: #333;line-height: 24px;}
+/*劳动合同*/
+.contract{margin-bottom: 30px;}
+.contract_pdf{color: #666;line-height: 24px;}
+.btn_download,.btn_qyht{width: 120px;height: 36px;border-radius: 5px;background: #E5EEFF;border: 1px solid #C8DBFF;color: #0561FF;outline: none;cursor: pointer;}
+.btn_download{margin-left: 30px;position: relative;}
+.btn_download input{width: 100%;height: 100%;position: absolute;top: 0;left: 0;opacity: 0;cursor: pointer;}
+/*hover*/
+.btn_download:hover,.btn_qyht:hover{color: #4C9BF0;}
